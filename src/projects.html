@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JoseRojasC</title>
+    <link rel="stylesheet" href="./css/output.css">
+    <script src="./script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="font-dm-sans bg-color-background text-white">
+
+    <div class="w-[90%] mx-auto overflow-hidden max-w-screen-xl">
+
+        <header>
+
+            <nav class="flex h-20 items-center justify-between">
+
+                <a href="./" class="w-1/2 max-w-[200px]">
+                    <img src="" class="block w-full">
+                </a>
+
+                <input type="checkbox" id="menu" class="peer/menu hidden">
+
+                <label for="menu"
+                    class="w-10 h-10 bg-open-menu bg-cover bg-center bg-green-color rounded-lg  cursor-pointer peer-checked/menu:bg-close-menu transition-all z-40 md:hidden"></label>
+
+                <ul class="list-none fixed inset-0 bg-menu-color 
+                px-[5%] grid gap-6 text-xl
+                
+                auto-rows-max content-center justify-items-center clip-circle-0 peer-checked/menu:clip-circle-full transition-[clip-path] duration-1000 
+                
+                md:clip-circle-full md:relative md:grid-flow-col md:p-0 md:bg-transparent">
+                    <li>
+                        <a href="#1">Software</a>
+                    </li>
+
+                    <li>
+                        <a href="#2">Web</a>
+                    </li>
+
+                    <li>
+                        <a href="#3">Cloud</a>
+                    </li>
+
+                    <li>
+                        <a href="#4">Contact Me</a>
+                    </li>
+                </ul>
+
+            </nav>
+
+            <section class="pt-10 pb-16 md:flex justify-between items-center gap-8">
+
+                <figure class="md:order-1">
+                    <img src="assets/profile.jpeg"
+                        class="w-[90%] aspect-square object-cover rounded-full max-w-sm mx-auto">
+                </figure>
+
+                <article class="text-center mt-8 md:w-1/2 md:text-left">
+
+                    <h1 class="text-4xl md:text-5xl">Hi, I am José Rojas.</h1>
+                    <p class="text-gray-color text-xl mt-3 mb-6">Frontend Developer.</p>
+
+                    <div class="grid 
+                    grid-cols-[repeat(auto-fit,minmax(170px,1fr))] auto-rows-[60px] gap-8 max-w-lg mx-auto md:mx-0">
+
+                        <a href="https://drive.google.com/file/d/1tMR2SVs6KjOP24cyf0rPDF8_0_Rj_icO/view?usp=sharing"
+                            class="bg-blue-color flex items-center justify-center">Download CV</a>
+
+                        <a href="index.html"
+                            class="flex items-center justify-center border-white border">Home</a>
+
+                    </div>
+                </article>
+
+            </section>
+
+        </header>
+
+
+        <main>
+
+            <section class="py-16">
+                <h2 class="text-4xl text-center mb-16 md:text-5xl">Projects</h2>
+
+                <div class="grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-8 " id="1">
+
+                    <article class="bg-card-color py-12 px-8 border-b-2 border-transparent">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icons w-24" id="dev">
+                            <circle cx="12" cy="11.245" r="1.785"></circle>
+                            <path
+                                d="m7.002 14.794-.395-.101c-2.934-.741-4.617-2.001-4.617-3.452 0-1.452 1.684-2.711 4.617-3.452l.395-.1.111.391a19.507 19.507 0 0 0 1.136 2.983l.085.178-.085.178c-.46.963-.841 1.961-1.136 2.985l-.111.39zm-.577-6.095c-2.229.628-3.598 1.586-3.598 2.542 0 .954 1.368 1.913 3.598 2.54.273-.868.603-1.717.985-2.54a20.356 20.356 0 0 1-.985-2.542zm10.572 6.095-.11-.392a19.628 19.628 0 0 0-1.137-2.984l-.085-.177.085-.179c.46-.961.839-1.96 1.137-2.984l.11-.39.395.1c2.935.741 4.617 2 4.617 3.453 0 1.452-1.683 2.711-4.617 3.452l-.395.101zm-.41-3.553c.4.866.733 1.718.987 2.54 2.23-.627 3.599-1.586 3.599-2.54 0-.956-1.368-1.913-3.599-2.542a20.683 20.683 0 0 1-.987 2.542z">
+                            </path>
+                            <path
+                                d="m6.419 8.695-.11-.39c-.826-2.908-.576-4.991.687-5.717 1.235-.715 3.222.13 5.303 2.265l.284.292-.284.291a19.718 19.718 0 0 0-2.02 2.474l-.113.162-.196.016a19.646 19.646 0 0 0-3.157.509l-.394.098zm1.582-5.529c-.224 0-.422.049-.589.145-.828.477-.974 2.138-.404 4.38.891-.197 1.79-.338 2.696-.417a21.058 21.058 0 0 1 1.713-2.123c-1.303-1.267-2.533-1.985-3.416-1.985zm7.997 16.984c-1.188 0-2.714-.896-4.298-2.522l-.283-.291.283-.29a19.827 19.827 0 0 0 2.021-2.477l.112-.16.194-.019a19.473 19.473 0 0 0 3.158-.507l.395-.1.111.391c.822 2.906.573 4.992-.688 5.718a1.978 1.978 0 0 1-1.005.257zm-3.415-2.82c1.302 1.267 2.533 1.986 3.415 1.986.225 0 .423-.05.589-.145.829-.478.976-2.142.404-4.384-.89.198-1.79.34-2.698.419a20.526 20.526 0 0 1-1.71 2.124z">
+                            </path>
+                            <path
+                                d="m17.58 8.695-.395-.099a19.477 19.477 0 0 0-3.158-.509l-.194-.017-.112-.162A19.551 19.551 0 0 0 11.7 5.434l-.283-.291.283-.29c2.08-2.134 4.066-2.979 5.303-2.265 1.262.727 1.513 2.81.688 5.717l-.111.39zm-3.287-1.421c.954.085 1.858.228 2.698.417.571-2.242.425-3.903-.404-4.381-.824-.477-2.375.253-4.004 1.841.616.67 1.188 1.378 1.71 2.123zM8.001 20.15a1.983 1.983 0 0 1-1.005-.257c-1.263-.726-1.513-2.811-.688-5.718l.108-.391.395.1c.964.243 2.026.414 3.158.507l.194.019.113.16c.604.878 1.28 1.707 2.02 2.477l.284.29-.284.291c-1.583 1.627-3.109 2.522-4.295 2.522zm-.993-5.362c-.57 2.242-.424 3.906.404 4.384.825.47 2.371-.255 4.005-1.842a21.17 21.17 0 0 1-1.713-2.123 20.692 20.692 0 0 1-2.696-.419z">
+                            </path>
+                            <path
+                                d="M12 15.313c-.687 0-1.392-.029-2.1-.088l-.196-.017-.113-.162a25.697 25.697 0 0 1-1.126-1.769 26.028 26.028 0 0 1-.971-1.859l-.084-.177.084-.179c.299-.632.622-1.252.971-1.858.347-.596.726-1.192 1.126-1.77l.113-.16.196-.018a25.148 25.148 0 0 1 4.198 0l.194.019.113.16a25.136 25.136 0 0 1 2.1 3.628l.083.179-.083.177a24.742 24.742 0 0 1-2.1 3.628l-.113.162-.194.017c-.706.057-1.412.087-2.098.087zm-1.834-.904c1.235.093 2.433.093 3.667 0a24.469 24.469 0 0 0 1.832-3.168 23.916 23.916 0 0 0-1.832-3.168 23.877 23.877 0 0 0-3.667 0 23.743 23.743 0 0 0-1.832 3.168 24.82 24.82 0 0 0 1.832 3.168z">
+                            </path>
+                        </svg>
+                        <h3 class="text-2xl text-gray-color font-medium">Software Development - Apex API / Apex SD /
+                            Ticketmaster API</h3>
+
+                        <div class="slider">
+                            <div class="slides text-lg">
+                                <div class="slide">
+                                    <h2 class="text-xl">APEX API</h2>
+                                    <p class="mt-4">App to see the current maps rotation and legends upgrades of Apex
+                                        Legends using
+                                        an API from apexlegendsstatus.com.</p>
+                                    <p class="mt-4">This project was made using the next technologies:</p>
+                                    <p class="mt-4">HTML - CSS - JSX - REACT - VITE</p><br>
+
+                                    <a href="https://apex-status.vercel.app" target="_blank"
+                                        class="inline-block bg-blue-color py-2 px-4 rounded-lg">DEMO</a>
+
+                                    <img src="https://github.com/user-attachments/assets/944f9346-f118-42f8-b135-d7bc16ebf716"
+                                        alt="APEX status" class="mt-8">
+
+                                </div>
+                                <div class="slide">
+                                    <h2 class="text-xl">APEX SD</h2>
+                                    <p class="mt-4">
+                                        Display the current map rotation and time remaining in Apex Legends on your
+                                        Stream Deck.</p>
+                                    <p class="mt-4">
+                                        Display the next map rotation in Apex Legends on your Stream Deck.
+                                    </p>
+
+                                    <h3 class="mt-8 text-xl">Requirements</h3>
+                                    <ul class="list-disc list-inside mt-4">
+                                        <li class="mt-4">
+                                            API Key from <a href="https://apexlegendsapi.com/#introduction"
+                                                class="text-blue-400 underline" target="_blank">apexlegendsapi.com</a>
+                                            (Discord account in order to use the API)
+                                        </li>
+                                        <li class="mt-4">Plugin API Ninja from BarRaider in ElGato Marketplace</li>
+                                        <li class="mt-4">Data from apexlegendsstatus.com</li>
+                                    </ul><br>
+
+                                    <a href="https://github.com/josrojas/apexMapsSD" target="_blank"
+                                        class="bg-blue-color py-2 px-4 rounded-lg">DEMO</a>
+
+                                    <div class="flex gap-8 justify-end items-end mt-8">
+                                        <img src="https://github.com/user-attachments/assets/bac253ee-1135-44c6-b432-913b47692995"
+                                            alt="APEX Stream Deck" class="w-32 h-auto rounded shadow">
+                                        <img src="https://github.com/josrojas/apexMapsSD/assets/73319827/938bed99-8f0c-4565-b4e1-06e53be67642"
+                                            alt="APEX SD Example" class="w-32 h-auto rounded shadow">
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <h2 class="text-xl">Ticketmaster API</h2>
+                                    <p class="mt-4"> App to see the current and upcoming events that Ticketmaster has in
+                                        Mexico. If
+                                        you want to reserve some event you will be redirect to the Oficcial Ticketmaster
+                                        page.
+                                    </p>
+
+                                    <p class="mt-4">This project was made using the next technologies: </p>
+
+                                    <p class="mt-4">HTML - CSS - JSX - REACT - VITE</p><br>
+
+                                    <a href="https://github.com/josrojas/ticketmaster-events-API" target="_blank" button
+                                        class="bg-blue-color py-2 px-4 rounded-lg">DEMO</a>
+
+                                    <img src="https://github.com/josrojas/ticketmaster-events-API/assets/73319827/65f5fb9c-a7f0-49fc-a576-05eb7d29d609"
+                                        alt="Ticketmaster API" class="mt-8">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+                </div>
+
+                <section class="py-16">
+
+                    <div class="grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-8 " id="2">
+
+                        <article class="bg-card-color py-12 px-8 border-b-2 border-transparent">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icons w-24" id="web">
+                                <path
+                                    d="M21.838 8.445c0-.001-.001-.001 0 0l-.003-.004-.001-.001v-.001a.809.809 0 0 0-.235-.228l-9.164-6.08a.834.834 0 0 0-.898 0L2.371 8.214A.786.786 0 0 0 2 8.897v6.16a.789.789 0 0 0 .131.448v.001l.002.002.01.015v.002h.001l.001.001.001.001c.063.088.14.16.226.215l9.165 6.082a.787.787 0 0 0 .448.139.784.784 0 0 0 .45-.139l9.165-6.082a.794.794 0 0 0 .371-.685v-6.16a.793.793 0 0 0-.133-.452zm-9.057-4.172 6.953 4.613-3.183 2.112-3.771-2.536V4.273zm-1.592 0v4.189l-3.771 2.536-3.181-2.111 6.952-4.614zm-7.595 6.098 2.395 1.59-2.395 1.611v-3.201zm7.595 9.311-6.96-4.617 3.195-2.15 3.765 2.498v4.269zm.795-5.653-3.128-2.078 3.128-2.105 3.131 2.105-3.131 2.078zm.797 5.653v-4.27l3.766-2.498 3.193 2.15-6.959 4.618zm7.597-6.11-2.396-1.611 2.396-1.59v3.201z">
+                                </path>
+                            </svg>
+
+                            <h3 class="text-2xl text-gray-color font-medium">Web Development - Text Encrypt /
+                                AluraFlix</h3>
+
+                            <div class="slider2">
+                                <div class="slides2">
+                                    <div class="slide2">
+                                        <h2 class="text-xl">Text encrypt with JS</h2>
+
+                                        <p class="mt-4"> Encrypt or decrypt any text you enter </p>
+
+                                        <p class="mt-4">This project was made using the next technologies:</p>
+
+                                        <p class="mt-4">HTML - CSS - JS</p><br>
+
+                                        <a href="https://josrojas.github.io/One-Challenge1/" target="_blank" button
+                                            class="bg-blue-color py-2 px-4 rounded-lg">DEMO</a>
+
+                                        <img src="https://github.com/user-attachments/assets/48eaabbc-4fa3-498e-bfb7-7f14b578b8f0"
+                                            alt="Text Encrypt" class="mt-8">
+                                        </p>
+                                    </div>
+
+                                    <div class="slide2">
+                                        <h2 class="text-xl">Aluraflix</h2>
+
+                                        <p class="mt-4"> Show a gallery of movies and series with trailers</p>
+
+                                        <p class="mt-4">This project was made using the next technologies:</p>
+
+                                        <p class="mt-4">HTML - CSS - JS</p><br>
+
+                                        <a href="https://josrojas.github.io/AluraFlix/" target="_blank" button
+                                            class="bg-blue-color py-2 px-4 rounded-lg">DEMO</a>
+
+                                        <img src="https://github.com/user-attachments/assets/97cd35b9-53cc-498e-9d20-5a41c4772ff2"
+                                            alt="AluraFlix" class="mt-8">
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+
+                    <section class="py-16">
+
+                        <article class="bg-card-color py-12 px-8 border-b-2 border-transparent">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icons w-24" id="py">
+                                <path
+                                    d="M9.585 11.692h4.328s2.432.039 2.432-2.35V5.391S16.714 3 11.936 3C7.362 3 7.647 4.983 7.647 4.983l.006 2.055h4.363v.617H5.92s-2.927-.332-2.927 4.282 2.555 4.45 2.555 4.45h1.524v-2.141s-.083-2.554 2.513-2.554zm-.056-5.74a.784.784 0 1 1 0-1.57.784.784 0 1 1 0 1.57z">
+                                </path>
+                                <path
+                                    d="M18.452 7.532h-1.524v2.141s.083 2.554-2.513 2.554h-4.328s-2.432-.04-2.432 2.35v3.951s-.369 2.391 4.409 2.391c4.573 0 4.288-1.983 4.288-1.983l-.006-2.054h-4.363v-.617h6.097s2.927.332 2.927-4.282-2.555-4.451-2.555-4.451zm-3.981 10.436a.784.784 0 1 1 0 1.57.784.784 0 1 1 0-1.57z">
+                                </path>
+                            </svg>
+
+                            <h3 class="text-2xl text-gray-color font-medium">Python - Recipes App / Tetris</h3>
+
+                            <div class="slider3">
+                                <div class="slides3">
+
+                                    <div class="slide3">
+                                        <h2 class="text-xl">Recipes App</h2>
+
+                                        <p class="mt-4">This is an interactive application developed with Python and
+                                            Streamlit for managing cooking recipes. It allows users to view, add,
+                                            modify, and delete ingredients, all stored in a JSON file that is created
+                                            automatically.</p>
+
+                                        <p class="mt-4">CRUD (Create, Read, Update and Delete)</p>
+
+                                        <h3 class="mt-8 text-xl">Features</h3>
+
+                                        <p class="mt-4">📜 View stored recipes along with their ingredients.</p>
+
+                                        <p class="mt-4">➕ Add new recipes to the database.</p>
+
+                                        <p class="mt-4">📝 Add ingredients to existing recipes.</p>
+
+                                        <p class="mt-4">❌ Remove ingredients from a recipe.</p>
+
+                                        <p class="mt-4">✏️ Update the name of a recipe.</p>
+
+                                        <h3 class="mt-8 text-xl">Requirements and Execution 🔎</h3>
+
+                                        <p class="mt-4">Make sure you have Python 3.11 or newer version installed.</p>
+
+                                        <p class="mt-4">To run the app, use:</p>
+
+                                        <p class="mt-4">streamlit run recipes.py or python -m streamlit run recipes.py
+                                        </p><br>
+
+                                        <a href="https://recipes-app.streamlit.app" target="_blank" button
+                                            class="bg-blue-color py-2 px-4 rounded-lg">DEMO</a>
+
+                                        <img src="https://github.com/user-attachments/assets/b35a0ee3-858e-489b-b327-f6e13c2a9545"
+                                            alt="Recipes App" class="mt-8">
+                                        </p>
+                                    </div>
+
+                                    <div class="slide3">
+                                        <h2 class="text-xl">Tetris</h2>
+
+                                        <p class="mt-4"> Classic Tetris game made with Python and Pygames library</p>
+
+                                        <h3 class="mt-8 text-xl">How to play</h3>
+
+                                        <p class="mt-4"> When one line completes that line dissapare and all the pieces
+                                            on top descend
+                                            one position, up to 4 line to score a tetris, the falling pieces speed up
+                                            over
+                                            time. The game ends when the pieces are piled up until they reach the top
+                                            (in
+                                            the visible area).</p>
+
+                                        <p class="mt-4">HUD: It's shows grid, on the left high score, on the right side
+                                            current score
+                                            and
+                                            what's next figure.</p>
+
+                                        <h3 class="mt-8 text-xl">Controls</h3>
+
+                                        <p class="mt-4">Move the falling pieces using left and right arrow keys, Up to
+                                            rotate and down
+                                            to fall faster.</p>
+
+                                        <p class="mt-4">This project was made using the next technologies:</p>
+
+                                        <p class="mt-4">Python - Pygames</p><br>
+
+                                        <a href="https://github.com/josrojas/Tetris" target="_blank" button
+                                            class="bg-blue-color py-2 px-4 rounded-lg">DEMO</a>
+
+                                        <img src="https://github.com/user-attachments/assets/cfa0cda3-a64a-4733-9a97-0a1e32d65113"
+                                            alt="Tetris Game" class="mt-8">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </article>
+
+                    </section>
+
+                    <article class="bg-card-color py-12 px-8 border-b-2 border-transparent" id="3">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icons w-24" id="cloud">
+                            <path
+                                d="M18.944 11.112C18.507 7.67 15.56 5 12 5 9.244 5 6.85 6.611 5.757 9.15 3.609 9.792 2 11.82 2 14c0 2.757 2.243 5 5 5h11c2.206 0 4-1.794 4-4a4.01 4.01 0 0 0-3.056-3.888zM18 17H7c-1.654 0-3-1.346-3-3 0-1.404 1.199-2.756 2.673-3.015l.581-.102.192-.558C8.149 8.274 9.895 7 12 7c2.757 0 5 2.243 5 5v1h1c1.103 0 2 .897 2 2s-.897 2-2 2z">
+                            </path>
+                        </svg>
+
+                        <h3 class="text-2xl text-gray-color font-medium">Cloud - Animal recon model</h3><br>
+
+                        <div class="slider4">
+                            <div class="slides4">
+
+                                <div class="slide4">
+                                    <h2 class="text-xl">Animal recon model</h2>
+
+                                    <p class="mt-4">This web app allows you to identify animal images using a
+                                        classification model trained with the Animals-10 dataset from Kaggle. It is
+                                        built with
+                                        Streamlit
+                                        and a pre-trained Keras model.</p>
+
+                                    <h3 class="mt-8 text-xl">🧠 Model</h3>
+
+                                    <p class="mt-4">This model is a Convolutional Neural Network (CNN) that uses
+                                        transfer learning with the MobileNetV2 architecture. It has been trained with
+                                        over 28.000 images from a dataset to classify them into 10 different animal categories.</p>
+
+                                    <p class="mt-4">This classification model is designed to predict the main category of an
+                                        animal image and provide the top 3 predictions with their respective confidence
+                                        percentages.</p><br>
+
+                                    <a href="https://recon-animales.streamlit.app" target="_blank" button
+                                        class="bg-blue-color py-2 px-4 rounded-lg">DEMO</a>
+
+                                    <img src="https://github.com/user-attachments/assets/2b7407a5-1d63-4ecb-970e-b94332f62cb1"
+                                        alt="Recon_animals App" class="mt-8">
+                                    </p>
+                                </div>
+                    </article>
+
+                </section>
+                <!--
+                <section class="py-16">
+                    <h2 class="text-4xl mb-16 text-center md:text-5xl" id="4">Get in Touch</h2>
+
+                    <form class="flex flex-wrap justify-between gap-8 px-1 max-w-screen-lg mx-auto">
+
+                        <input type="text" placeholder="Name"
+                            class="border-b px-2 py-4 flex-grow basis-60  focus-input">
+
+                        <input type="email" placeholder="Email"
+                            class="border-b px-2 py-4 flex-grow basis-60 focus-input">
+
+                        <textarea placeholder="Message"
+                            class="border px-4 py-6 min-w-full max-w-full w-full min-h-[100px] max-h-60 focus-input"></textarea>
+
+                        <input type="submit" value="Contact me" class="bg-blue-color py-4 px-14 mx-auto cursor-pointer">
+
+                    </form>
+
+                </section> -->
+        </main>
+
+        <footer class="py-24 text-center">
+            <p class="text-xl text-gray-color">&copy; José Rojas C. 2024</p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
