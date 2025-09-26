@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     showNextSlide("slides", "slide");
     showNextSlide("slides2", "slide2");
     showNextSlide("slides3", "slide3");
+    showNextSlide("slides4", "slide4"); 
 
     // Progress Bar
     function animateProgress(barId, finalValue) {
